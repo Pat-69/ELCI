@@ -112,8 +112,8 @@ public class RemoteSession {
 			pendingRemoval = true;
 		}
 	}
-	// TODO: Decrypt here
-	protected void handleLine(String line) {
+
+	protected void handleLine(String line) { 	// TODO Decrypt here
 //		System.out.println(line);
 		String methodName = line.substring(0, line.indexOf("("));
 		//split string into args, handles , inside " i.e. ","
